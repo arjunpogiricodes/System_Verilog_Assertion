@@ -1,0 +1,35 @@
+<session version="1.1" release="T-2022.06-SP1" timestp="2024-10-17 09:25:30 GMT">
+  <info>
+    <attr name="datetime" value="Thu Oct 17 14:55:30 2024
+"/>
+    <attr name="command" value="urg -dir cov.vdb -format both -report urgReport"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Assert" type="ratio" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Assert" value="1/3" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+  </scope>
+  <scope type="assert" name="Statistics">
+    <scorelist type="total" name="Design Hierarchy Assert">
+      <score name="Assert" value="1/3" />
+      <score name="Score" value="33.33" />
+    </scorelist>
+    <scorelist type="total" name="Module List Assert">
+      <score name="Assert" value="1/3" />
+      <score name="Score" value="33.33" />
+    </scorelist>
+    <scorelist type="total" name="Assertion">
+      <score name="Assert" value="1/3" />
+      <score name="Score" value="33.33" />
+    </scorelist>
+  </scope>
+  </old_coverage>
+</session>

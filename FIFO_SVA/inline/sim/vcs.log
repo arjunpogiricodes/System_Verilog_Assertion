@@ -1,0 +1,198 @@
+Command: vcs -l vcs.log -sverilog -debug_access+all -full64 -cm assert -kdb -lca \
+-P /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/novas.tab \
+/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+../duv_tb/fifo.sv ../duv_tb/tb_fifo.sv
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP1_Full64 -- Wed Oct 16 16:46:57 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Parsing design file '../duv_tb/fifo.sv'
+Parsing design file '../duv_tb/tb_fifo.sv'
+Top Level Modules:
+       tb_fifo
+No TimeScale specified
+Starting vcs inline pass...
+
+1 module and 0 UDP read.
+recompiling module tb_fifo
+make[1]: Entering directory '/home1/B110/PogiRiArjun/VLSI_RN/SAV_LABS/FIFO_SVA/inline/sim/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib -L/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _2855898_archive_1.so \
+SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+-lvcsnew -lsimprofile -lreader_common /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib/libBA.a \
+-luclinative /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib/vcs_tls.o  \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib/vcs_save_restore_new.o /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/home1/B110/PogiRiArjun/VLSI_RN/SAV_LABS/FIFO_SVA/inline/sim/csrc' \
+
+CPU time: .381 seconds to compile + .296 seconds to elab + .264 seconds to link
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+Command: /home1/B110/PogiRiArjun/VLSI_RN/SAV_LABS/FIFO_SVA/inline/sim/./simv -a vcs.log -cm assert_enable_coverage=1 -cm_dir ./cov ntb_random_seed=2231849661
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP1_Full64; Runtime version T-2022.06-SP1_Full64;  Oct 16 16:49 2024
+*Verdi* Loading libsscore_vcs202206.so
+FSDB Dumper for VCS, Release Verdi_T-2022.06-SP1, Linux x86_64/64bit, 08/28/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the SVA assertions under scope (tb_fifo), layer (0).
+*Verdi* : End of traversing the SVA assertions.
+*Verdi* : Begin traversing the scope (tb_fifo), layer (0).
+*Verdi* : End of traversing.
+********* FIFO : Underflow = 0, Overflow = 0 **********
+
+
+ ************ WRITING INTO FIFO ************* 
+
+ 
+FIFO WRITE: Data =  16  
+
+FIFO WRITE: Data =  15  
+
+FIFO WRITE: Data =  14  
+
+FIFO WRITE: Data =  13  
+
+FIFO WRITE: Data =  12  
+
+FIFO WRITE: Data =  11  
+
+FIFO WRITE: Data =  10  
+
+FIFO WRITE: Data =   9  
+
+FIFO WRITE: Data =   8  
+
+FIFO WRITE: Data =   7  
+
+FIFO WRITE: Data =   6  
+
+FIFO WRITE: Data =   5  
+
+FIFO WRITE: Data =   4  
+
+FIFO WRITE: Data =   3  
+
+FIFO WRITE: Data =   2  
+
+FIFO WRITE: Data =   1  
+
+FIFO WRITE: Data =   1  
+
+WRITE ERROR: FIFO IS FULL 
+
+"../duv_tb/fifo.sv", 315: tb_fifo.DUV.WR_PTR: started at 180s failed at 190s
+	Offending '(write_ptr == ($past(write_ptr) + 1))'
+********* FIFO : Underflow = 0, Overflow = 1 **********
+FIFO WRITE: Data =   1  
+
+WRITE ERROR: FIFO IS FULL 
+
+
+
+ ************ READING FIFO ************* 
+
+ 
+"../duv_tb/fifo.sv", 314: tb_fifo.DUV.RD_PTR: started at 210s failed at 210s
+	Offending '(read_ptr == ($past(read_ptr) + 1))'
+********* FIFO : Underflow = 0, Overflow = 0 **********
+FIFO READ:  Data =  16 
+
+FIFO READ:  Data =  15 
+
+FIFO READ:  Data =  14 
+
+FIFO READ:  Data =  13 
+
+FIFO READ:  Data =  12 
+
+FIFO READ:  Data =  11 
+
+FIFO READ:  Data =  10 
+
+FIFO READ:  Data =   9 
+
+FIFO READ:  Data =   8 
+
+FIFO READ:  Data =   7 
+
+FIFO READ:  Data =   6 
+
+FIFO READ:  Data =   5 
+
+FIFO READ:  Data =   4 
+
+FIFO READ:  Data =   3 
+
+FIFO READ:  Data =   2 
+
+FIFO READ:  Data =   1 
+
+READ ERROR: FIFO IS EMPTY 
+
+********* FIFO : Underflow = 1, Overflow = 0 **********
+FIFO READ:  Data =   1 
+
+READ ERROR: FIFO IS EMPTY 
+
+FIFO READ:  Data =   1 
+
+FIFO WRITE: Data =   0  
+
+********* FIFO : Underflow = 0, Overflow = 0 **********
+FIFO WRITE: Data =   1  
+
+"../duv_tb/fifo.sv", 314: tb_fifo.DUV.RD_PTR: started at 410s failed at 410s
+	Offending '(read_ptr == ($past(read_ptr) + 1))'
+FIFO READ:  Data =   0 
+
+FIFO READ:  Data =   1 
+
+FIFO WRITE: Data =   2  
+
+FIFO WRITE: Data =   3  
+
+FIFO WRITE: Data =   8  
+
+"../duv_tb/fifo.sv", 314: tb_fifo.DUV.RD_PTR: started at 450s failed at 450s
+	Offending '(read_ptr == ($past(read_ptr) + 1))'
+FIFO READ:  Data =   2 
+
+$finish called from file "../duv_tb/tb_fifo.sv", line 100.
+$finish at simulation time                  455
+"../duv_tb/fifo.sv", 315: tb_fifo.DUV.WR_PTR: started at 450s not finished
+"../duv_tb/fifo.sv", 311: tb_fifo.DUV.READ, 45 attempts, 1 match
+"../duv_tb/fifo.sv", 312: tb_fifo.DUV.STATUS_WCNT, 45 attempts, 19 match
+"../duv_tb/fifo.sv", 313: tb_fifo.DUV.STATUS_RCNT, 45 attempts, 17 match
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 455
+CPU Time:      0.270 seconds;       Data structure size:   0.0Mb
+Wed Oct 16 16:49:00 2024

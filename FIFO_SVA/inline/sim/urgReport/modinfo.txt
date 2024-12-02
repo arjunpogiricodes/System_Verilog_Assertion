@@ -1,0 +1,88 @@
+===============================================================================
+Module : fifo
+===============================================================================
+SCORE  ASSERT 
+100.00 100.00 
+
+Module self-instances :
+
+SCORE  ASSERT NAME        
+100.00 100.00 tb_fifo.DUV 
+
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Module : fifo
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       10    10        100.00  10                100.00  
+Cover properties 3     3         100.00  3                 100.00  
+Cover sequences  0     0                 0                         
+Total            13    13        100.00  13                100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name        Attempts Real Successes Failures Incomplete 
+FIFO_EMPTY  45       1              0        0          
+FIFO_FULL   45       1              0        0          
+FIFO_RP_RST 45       1              0        0          
+FIFO_WR_RST 45       1              0        0          
+OVERFLOW    45       2              0        0          
+RD_PTR      45       16             3        0          
+RESET       45       2              0        0          
+UNDERFLOW   45       2              0        0          
+WRITE       45       1              0        0          
+WR_PTR      45       19             1        1          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name        Attempts Matches Incomplete 
+READ        45       1       0          
+STATUS_RCNT 45       17      0          
+STATUS_WCNT 45       19      0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : tb_fifo.DUV
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME 
+100.00 100.00 fifo 
+
+
+Parent : 
+
+none
+----------------
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.

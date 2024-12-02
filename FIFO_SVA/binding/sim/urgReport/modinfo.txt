@@ -1,0 +1,71 @@
+===============================================================================
+Module : fifo_assertions
+===============================================================================
+SCORE  ASSERT 
+ 33.33  33.33 
+
+Module self-instances :
+
+SCORE  ASSERT NAME               
+ 33.33  33.33 tb_fifo.DUV.ASSERT 
+
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Module : fifo_assertions
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       3     3         100.00  1                 33.33   
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            3     3         100.00  1                 33.33   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name      Attempts Real Successes Failures Incomplete 
+OVERFLOW  45       0              0        0          
+RESET     45       2              0        0          
+UNDERFLOW 45       0              0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : tb_fifo.DUV.ASSERT
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 33.33  33.33 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 33.33  33.33 
+
+
+Module : 
+
+SCORE  ASSERT NAME            
+ 33.33  33.33 fifo_assertions 
+
+
+Parent : 
+
+none
+----------------
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
